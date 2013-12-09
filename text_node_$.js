@@ -24,5 +24,8 @@ $(function() {
   console.log($t.parent()); //=> [<h1 id="wrapper">...</h1>]
   $t.replaceWith("うううう");
   console.log($t.parent()); //=> []  親への参照は消える
+
+  //テキストノードを作成する時は単純にappendする
+  $h1.append("ええええ");
 });
 
