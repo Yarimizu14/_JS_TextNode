@@ -9,7 +9,7 @@ $(function() {
   /*
    * テキストノード
    */
-  var $t = $(h1.contents()[0]);  //jQuery object of text node
+  var $t = $($h1.contents()[0]);  //jQuery object of text node
   $t.data("key", "this is text node");
 
   //textの取得は出来るが変更は出来ない

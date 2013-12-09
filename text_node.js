@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log(t.parentNode); //=> <h1 id="wrapper">...</h1> 参照は残る
   console.log(t.nodeValue);  //=>  "    ああああ     "
   console.log(t.data);       //=>  "    ああああ     "
-  console.log(typeof t.parentNode); //=> "string" string型で格納される
+  console.log(typeof t.nodeValue); //=> "string" string型で格納される
 
   t.nodeValue = "いいい"; //DOMが変わる
 
